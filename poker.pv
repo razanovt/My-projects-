@@ -1,0 +1,34 @@
+<PokerTable>:
+    bet_message: bet_message_label
+
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 10
+        spacing: 10
+
+        Label:
+            id: bet_message_label
+            text: "Добро пожаловать в покер!"
+            size_hint_y: None
+            height: '40dp'
+
+        BoxLayout:
+            size_hint_y: None
+            height: '40dp'
+            spacing: 10
+
+            Button:
+                text: "Сделать ставку 50"
+                on_press: root.raise_bet(50)
+
+            Button:
+                text: "Пас"
+                on_press: root.fold()
+
+            Button:
+                text: "Раздать карты"
+                on_press: root.deal_cards()
+
+            Button:
+                text: "Открыть карты дилера"
+                on_press: root.open_dealer_cards()
