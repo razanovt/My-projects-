@@ -1,3 +1,4 @@
 # My-projects-
-this is my projects 
-if you are intrested you can look into the branches 
+this is the site parcer that is connected to telegram bot 
+this bot is tracking the crypto "airdrops" and sends notifications 
+
